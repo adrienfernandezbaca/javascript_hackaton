@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/test.js"></script>
+	<link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+	<div id="game">
+		<div id='top-bar'><h1>Level 1</h1></div>
+		<canvas id="square" width="15" height="15"></canvas>
+		<div class="actionspace" id='start'>
+		</div>
+		<div class="actionspace" id='middle'>
+			<div class="ball_1 left-ball balls animated both-ways forever" id='ball1'></div>
+			<div class="ball_1 left-ball balls animated both-ways forever" id='ball2'></div>
+			<div class="ball_1 left-ball balls animated both-ways forever" id='ball3'></div>
+			<div class="ball_1 left-ball balls animated both-ways forever" id='ball4'></div>
+			<div class="ball_1 left-ball balls animated both-ways forever" id='ball5'></div>
+
+
+			<div class="ball_1 right-ball balls animated both-ways forever" id='ball6'></div>
+			<div class="ball_1 right-ball balls animated both-ways forever" id='ball7'></div>
+			<div class="ball_1 right-ball balls animated both-ways forever" id='ball8'></div>
+			<div class="ball_1 right-ball balls animated both-ways forever" id='ball9'></div>
+			<div class="ball_1 right-ball balls animated both-ways forever" id='ball10'></div>
+			
+			<div class="ball_2 right-ball-top balls animated both-ways forever" id='ball11'></div>
+			<div class="ball_2 right-ball-top balls animated both-ways forever" id='ball12'></div>
+			<div class="ball_3 right-ball-bottom balls animated both-ways forever" id='ball13'></div>
+			<div class="ball_4 right-ball-bottom balls animated both-ways forever" id='ball14'></div>
+			<div class="ball_4 right-ball-bottom balls animated both-ways forever" id='ball15'></div>
+			
+
+		</div>
+		<div class="actionspace" id='finish'></div>
+		<div class="clear"></div>
+		<div id="bottom-bar">
+			<h4 id='attempt'> Attempt: 1</h4>
+			<p></p>
+			<div id="button-bar">
+			<div class= "button" id="launch">Start</div>
+		</div>
+		<div>
+			<p>Pick a level:</p>
+			<div class= "button level" value='1' style='float: left; margin: 0px'>Level 1</div>
+			<div class= "button level" value='2' style='float: left; margin: 0px'>Level 2</div>
+			<div class= "button level" value='3' style='float: left; margin: 0px'>Level 3</div>
+			<div class= "button level" value='4' style='float: left; margin: 0px'>Level 4</div>
+			<div class= "button level" value='5' style='float: left; margin: 0px'>Level 5</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,312 @@
+*
+{
+	overflow: hidden;
+}
+
+#square
+{
+position: absolute;
+top: 330px;
+left: 20px;
+overflow: hidden;
+margin: 0px;
+float: left;
+border: 1px black solid;
+background: yellow;
+}
+
+/*******************/
+#player-icon{
+	height: 15px;
+	width: 15px;
+	border-radius: 7px;
+	background-color: red;
+	position: relative;
+	top:322px;
+	left: 300px;
+}
+
+#ball1
+{
+position: absolute;
+top: 0px;
+}
+#ball2
+{
+position: absolute;
+top: 32px;
+}
+#ball3
+{
+position: absolute;
+top: 64px;
+}
+#ball4
+{
+position: absolute;
+top: 96px;
+}
+#ball5
+{
+position: absolute;
+top: 128px;
+}
+
+#ball6
+{
+position: absolute;
+top: 16px;
+}
+#ball7
+{
+position: absolute;
+top: 48px;
+}
+#ball8
+{
+position: absolute;
+top: 80px;
+}
+#ball9
+{
+position: absolute;
+top: 112px;
+}
+#ball10
+{
+position: absolute;
+top: 144px;
+}
+#ball11
+{
+position: absolute;
+left: 47px;
+display: none;
+}
+#ball12
+{
+position: absolute;
+left: 296px;
+display: none;
+}
+
+#ball13
+{
+position: absolute;
+left: 190px;
+top: 144px;
+display: none;
+}
+#ball14
+{
+position: absolute;
+left: 141px;
+top: 144px;
+display: none;
+}
+#ball15
+{
+position: absolute;
+left: 240px;
+top: 144px;
+display: none;
+}
+
+#playground{
+	height:400px;
+	width:400px;
+	background-color: lightgrey;
+	position: relative;
+	margin:100px auto 0px;
+}
+.right-ball, .left-ball, .right-ball-top, .left-ball-top, .right-ball-bottom, .right-ball-circle, .left-ball-circle{
+	height:16px;
+	width: 16px;
+	border-radius: 10px;
+	background-color: black;
+}
+
+.left-ball{
+    animation: left-ball;
+    -webkit-animation: left-ball;
+}
+
+@keyframes left-ball{
+    from {left:0px;}
+    to {left:367px;}
+}
+
+@-webkit-keyframes left-ball{
+    from {left:0px;}
+    to {left:367px;}
+}
+
+.right-ball{
+    animation: right-ball;
+    -webkit-animation: right-ball;
+}
+
+@keyframes right-ball{
+    from {left:367px;}
+    to {left:0px;}
+}
+
+@-webkit-keyframes right-ball{
+    from {left:367px;}
+    to {left:0px;}
+}
+
+
+.right-ball-top{
+    animation: right-ball-top;
+    -webkit-animation: right-ball-top;
+} 
+
+@keyframes right-ball-top{
+    from {top:0px;}
+    to {top:144px;}
+}
+
+@-webkit-keyframes right-ball-top{
+    from {top:0px;}
+    to {top:144px;}
+}
+
+
+.right-ball-bottom{
+    animation: right-ball-bottom;
+    -webkit-animation: right-ball-bottom;
+} 
+
+@keyframes right-ball-bottom{
+    from {top:144px;}
+    to {top:0px;}
+}
+
+@-webkit-keyframes right-ball-bottom{
+    from {top:144px;}
+    to {top:0px;}
+}
+
+.animated{
+    position: absolute;
+    /*position: absolute;*/
+    
+    -webkit-animation-timing-function: ease-in-out;   
+    -moz-animation-timing-function: ease-in-out;
+    -o-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+   
+    
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -o-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.both-ways{
+    animation-direction: alternate;
+    -webkit-animation-direction: alternate;  
+}
+
+.forever{
+    animation-iteration-count: 0;
+    -webkit-animation-iteration-count: 0;
+}
+
+
+/**************/
+#game
+{
+	margin-top: 100px;
+	border: 1px solid black;
+	width: 500px;
+	height: 500px;
+	z-index: -1;
+}
+
+.button
+{
+	border: white 1px solid;
+	color: white;
+	width: 80px;
+	height: 20px;
+	margin-left: 200px;
+	text-align: center;
+}
+
+#bottom-bar
+{
+	background: black;
+	color: white;
+	height: 200px;
+	width: 500px;
+	position: absolute;
+	top: 410px;
+	left: 9px;
+}
+#top-bar
+{
+	height: 30px;
+	background: black;
+	color: white;
+}
+
+h1
+{
+	margin-top: 0px;
+	margin-left: 190px;
+}
+
+	#start
+	{
+		position: absolute;
+		border-left: 1px solid black;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		width : 32px;
+		height: 32px;
+		top: 330px;
+		left: 20px;
+		background: green;
+		float: left;
+		z-index: -1;
+	}
+
+	#middle
+	{
+		position: absolute;
+		border: 1px solid black;
+		width : 383px;
+		height: 160px;
+		top: 202px;
+		left: 52px;
+		float: left;
+		z-index: -1;
+	}
+
+	#finish
+	{
+		position: absolute;
+		border-right: 1px solid black;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		width : 32px;
+		height: 32px;
+		top: 202px;
+		left: 436px;
+		background: green;
+		z-index: -1;
+		float: right;
+		
+	}
+
+.clear 
+{
+clear: both;
+}
